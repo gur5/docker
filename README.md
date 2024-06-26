@@ -1,9 +1,14 @@
-<h1>Python_img</h1>
+<h1>Java_img</h1>
 
 <h2>Dockerfile</h2>
-From python:3.10-slim
-copy . /
-cmd ["python", "python.py"]
+from openjdk:latest
+copy . .
+run javac hello.java
+cmd ["java", "abc"]
 
-<h2>python.py</h2>
-print("Hello, world!")
+<h2>hello.java</h2>
+class abc {
+	public static void main(String[] args){
+		system.out.println("hello, World!");
+	}
+}
