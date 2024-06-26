@@ -1,16 +1,9 @@
-<h1>C_img</h1>
+<h1>Python_img</h1>
 
 <h2>Dockerfile</h2>
-FROM gcc:latest
-copy . .
-run gcc -o myapp  hello.c
-cmd ["./myapp"]      
+From python:3.10-slim
+copy . /
+cmd ["python", "python.py"]
 
-<h2>hello.c</h2>
-#include <stdio.h> 
-  
-int main() 
-{ 
-    printf("Welcome to Docker World!!!\n"); 
-    return 0; 
-}
+<h2>python.py</h2>
+print("Hello, world!")
