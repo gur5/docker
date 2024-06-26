@@ -1,14 +1,16 @@
-<h1>Java_img</h1>
+<h1>SSH_img</h1>
 
 <h2>Dockerfile</h2>
-from openjdk:latest
-copy . .
-run javac hello.java
-cmd ["java", "abc"]
+from ubuntu
+run apt update ; apt install openssh-server -y
+run useradd john
+run echo "john:123" | chpasswd
+run mkdir /run/sshd
+copy xyz.sh ./
+run chmod +x xyz.sh
+cmd ["./xyz.sh"]
 
-<h2>hello.java</h2>
-class abc {
-	public static void main(String[] args){
-		system.out.println("hello, World!");
-	}
-}
+<h2>xyz.sh</h2>
+#!/bin/bash
+sshd
+bash
