@@ -1,7 +1,8 @@
 # docker
+```
 $ docker build -t c_img .
 $ docker run 
-
+```
 ## Docker hub
 -	Create repository in dockerhub
 -	Docker login ic cli
