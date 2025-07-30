@@ -19,3 +19,16 @@ $ docker run
 -	docker volume inspect <volume_name>
 -	docker run -v /abslute_path/file.txt:/path/file.txt --rm <image_name>
 	 
+## docker network 
+
+- docker network create <network_name>
+
+## docker-compose
+
+-	docker-compose up
+-	docker-compose down
+-	docker-compose down -v  # removing all network 
+
+
+
+
