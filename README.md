@@ -24,11 +24,11 @@ $ docker run
 - docker network create <network_name>
 
 ## docker-compose
-
--	docker-compose up
--	docker-compose down
--	docker-compose down -v  # removing all network 
-
+```
+docker-compose up
+docker-compose down
+docker-compose down -v  # removing all network 
+```
 
 
 
