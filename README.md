@@ -21,7 +21,7 @@ $ docker run
 	 
 ## docker network 
 
-- docker network create <network_name>
+	docker network create <network_name>
 
 ## docker-compose
 ```
